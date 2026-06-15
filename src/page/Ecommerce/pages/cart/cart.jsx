@@ -38,7 +38,7 @@ export const Cart = () => {
   useEffect(() => {
     handleFetchData();
     // console.log(paymentMethod)
-  })
+  }, [])
   useEffect(() => {
     axios
       .get(`${BASE_URL_PaymentMethods}?isDeleted=false`)
