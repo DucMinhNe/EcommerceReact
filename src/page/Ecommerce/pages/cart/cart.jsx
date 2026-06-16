@@ -219,7 +219,7 @@ export const Cart = () => {
             </p>
           </div>
           <p className='font-titleFont font-semibold flex justify-between mt-6'>
-            Tổng Cộng <span className='text-xl font-bold'>{totalPrice} Vnđ</span>
+            Tổng Cộng <span className='text-xl font-bold'>{Number(totalPrice) + shippingCost} Vnđ</span>
           </p>
           {productData.length > 0 && (
             <button onClick={handleCheckout} className='text-base text-white w-full py-3 mt-6 hover: bg-gray-800 duration-300'>Đặt Hàng</button>
