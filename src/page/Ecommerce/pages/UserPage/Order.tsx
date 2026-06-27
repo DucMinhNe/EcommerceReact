@@ -203,7 +203,7 @@ const Orders = () => {
             setIsLoading(false);
         }, 300);
         handleFetchData();
-    },);
+    }, []);
     const [isDeletedFetchData, setIsDeletedFetchData] = useState(false);
     const handleToggleIsDeletedFetchData = () => {
         setIsDeletedFetchData((prevIsDeleted) => !prevIsDeleted);
